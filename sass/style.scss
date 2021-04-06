@@ -7,7 +7,7 @@ $font-main: 'Poppins', sans-serif;
 $font-text: 'Roboto', sans-serif;
 $color-main: rgb(253, 186, 40);
 $color-decor: rgb(6, 14, 90);
-$color-dark: rgba(161, 14, 14, 0.829);
+$color-dark: rgb(175, 7, 44);
 $color-light: rgb(253, 253, 249);
 
 body {
@@ -43,11 +43,38 @@ body {
         margin: 35px 0 0 0;
         font-size: 20px;
         color: $color-dark;
+        text-transform: uppercase;
     }
     p {
         margin: 5px 0 0 0;
     }
     i {
         color: $color-main;
+    }
+}
+
+/* Game */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    #buttons {
+        margin: 24px 0;
+        button {
+            margin: 0 10px;
+            padding: 10px 20px;
+            background-color: $color-dark;
+            color: $color-light;
+            font-size: 16px;
+            border-radius: 4px;
+            border: none;
+            cursor: pointer;
+        }
+    }
+    #messages {
+        margin: 5px 0;
+        font-size: 24px;
     }
 }
