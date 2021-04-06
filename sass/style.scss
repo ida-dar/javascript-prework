@@ -1,14 +1,53 @@
+// * {
+//     border: 1px solid red;
+// }
+
 /* Global */
 $font-main: 'Poppins', sans-serif;
 $font-text: 'Roboto', sans-serif;
-$color-main: rgb(212, 149, 14);
+$color-main: rgb(253, 186, 40);
+$color-decor: rgb(6, 14, 90);
 $color-dark: rgba(161, 14, 14, 0.829);
 $color-light: rgb(253, 253, 249);
 
 body {
     margin: 0;
     line-height: 1.7;
-    font-size: 18px;
+    font-size: 16px;
     font-family: $font-text;
     background-color: $color-light;
+    height: 100vh;
+}
+
+/* Header */
+.page-title {
+    margin: 0;
+    padding: 48px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h1 {
+        margin: 0;
+        font-family: $font-main;
+        font-size: 48px;
+        text-transform: uppercase;
+        color: $color-decor;
+    }
+    h2 {
+        margin: 5px;
+        font-size: 24px;
+        font-family: $font-main;
+    }
+    h3 {
+        margin: 35px 0 0 0;
+        font-size: 20px;
+        color: $color-dark;
+    }
+    p {
+        margin: 5px 0 0 0;
+    }
+    i {
+        color: $color-main;
+    }
 }

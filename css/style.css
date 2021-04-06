@@ -2,8 +2,47 @@
 body {
   margin: 0;
   line-height: 1.7;
-  font-size: 18px;
+  font-size: 16px;
   font-family: "Roboto", sans-serif;
   background-color: #fdfdf9;
+  height: 100vh;
 }
-/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Nhc3Mvc3R5bGUuc2NzcyIsInN0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxXQUFBO0FBT0E7RUFDSSxTQUFTO0VBQ1QsZ0JBQWdCO0VBQ2hCLGVBQWU7RUFDZixpQ0FUNEI7RUFVNUIseUJBUDRCO0FDRWhDIiwiZmlsZSI6InN0eWxlLmNzcyJ9 */
+
+/* Header */
+.page-title {
+  margin: 0;
+  padding: 48px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-title h1 {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 48px;
+  text-transform: uppercase;
+  color: #060e5a;
+}
+
+.page-title h2 {
+  margin: 5px;
+  font-size: 24px;
+  font-family: "Poppins", sans-serif;
+}
+
+.page-title h3 {
+  margin: 35px 0 0 0;
+  font-size: 20px;
+  color: rgba(161, 14, 14, 0.829);
+}
+
+.page-title p {
+  margin: 5px 0 0 0;
+}
+
+.page-title i {
+  color: #fdba28;
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Nhc3Mvc3R5bGUuc2NzcyIsInN0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFJQSxXQUFBO0FBUUE7RUFDSSxTQUFTO0VBQ1QsZ0JBQWdCO0VBQ2hCLGVBQWU7RUFDZixpQ0FWNEI7RUFXNUIseUJBUDRCO0VBUTVCLGFBQWE7QUNWakI7O0FEYUEsV0FBQTtBQUNBO0VBQ0ksU0FBUztFQUNULGVBQWU7RUFDZixhQUFhO0VBQ2Isc0JBQXNCO0VBQ3RCLHVCQUF1QjtFQUN2QixtQkFBbUI7QUNWdkI7O0FESUE7RUFRUSxTQUFTO0VBQ1Qsa0NBMUJ5QjtFQTJCekIsZUFBZTtFQUNmLHlCQUF5QjtFQUN6QixjQTFCb0I7QUNrQjVCOztBREpBO0VBZVEsV0FBVztFQUNYLGVBQWU7RUFDZixrQ0FsQ3lCO0FDMkJqQzs7QURWQTtFQW9CUSxrQkFBa0I7RUFDbEIsZUFBZTtFQUNmLCtCQW5DNkI7QUM2QnJDOztBRGhCQTtFQXlCUSxpQkFBaUI7QUNMekI7O0FEcEJBO0VBNEJRLGNBM0NzQjtBQ3VDOUIiLCJmaWxlIjoic3R5bGUuY3NzIn0= */
