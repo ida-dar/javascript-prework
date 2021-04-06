@@ -1,0 +1,14 @@
+/* Global */
+$font-main: 'Poppins', sans-serif;
+$font-text: 'Roboto', sans-serif;
+$color-main: rgb(212, 149, 14);
+$color-dark: rgba(161, 14, 14, 0.829);
+$color-light: rgb(253, 253, 249);
+
+body {
+    margin: 0;
+    line-height: 1.7;
+    font-size: 18px;
+    font-family: $font-text;
+    background-color: $color-light;
+}
