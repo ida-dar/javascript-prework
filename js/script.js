@@ -33,14 +33,12 @@
 
         const displayResult = function(argComputerMove, argPlayerMove) {
             console.log(`Funkcja displayResult: argComputerMove: ${argComputerMove}, argPlayerMove: ${argPlayerMove}`);
-            if(argComputerMove == "kamień" && argPlayerMove == "papier") {
-                printMessage("Ty wygrywasz!");
-
-            } else if(argComputerMove == "papier" && argPlayerMove == "nożyce") {
-                printMessage("Ty wygrywasz!");
-
-            } else if(argComputerMove == "nożyce" && argPlayerMove == "kamień") {
-                printMessage("Ty wygrywasz!");
+            if(
+                (argComputerMove == "kamień" && argPlayerMove == "papier") ||
+                (argComputerMove == "papier" && argPlayerMove == "nożyce") ||
+                (argComputerMove == "papier" && argPlayerMove == "kamień")
+            ) {
+            printMessage("<span class='win'>Wygrywasz!</span>");
 
             } else if(argComputerMove == argPlayerMove) {
                 printMessage("Remis!");
@@ -49,7 +47,7 @@
                 printMessage("Wpisano niepoprawną wartość");
 
             } else {
-                printMessage("Przegrałeś");
+                printMessage("<span class='lost'>Przegrywasz</span>");
             }
         }
 
@@ -58,7 +56,7 @@
         displayResult(computerMove, playerMove);
 
     }
-
+    
 
     document.getElementById('play-rock').addEventListener('click', function() {
         playGame(1);
