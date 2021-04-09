@@ -78,3 +78,26 @@ body {
         font-size: 24px;
     }
 }
+
+/* Results */
+.win {
+    color: green;
+    text-transform: uppercase;
+    margin: 5px 0;
+}
+
+.lost {
+    color: $color-dark;
+    text-transform: uppercase;
+    margin: 5px 0;
+}
+
+.player_score {
+    color: $color-decor;
+    margin: 0 30px 0 0;
+}
+
+.comp_score {
+    color: $color-decor;
+    margin: 0 0 0 30px;
+}
