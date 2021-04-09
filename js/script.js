@@ -1,10 +1,10 @@
 {
     function playGame(playerInput) {
-        console.log(`Wywołano funkcję playGame z argumentem playerInput: ${playerInput}`);
+        console.log(`Funkcja playGame z argumentem playerInput: ${playerInput}`);
 
         clearMessages();
 
-        function getMoveName(argMoveId) {
+        const getMoveName = function(argMoveId) {
             if(argMoveId == 1) {
                 return "kamień";
             } else if(argMoveId == 2) {
@@ -28,11 +28,11 @@
 
         console.log("Gracz wpisał: " + playerInput);
 
-
         const playerMove = getMoveName(playerInput);
 
 
-        function displayResult(argComputerMove, argPlayerMove) {
+        const displayResult = function(argComputerMove, argPlayerMove) {
+            console.log(`Funkcja displayResult: argComputerMove: ${argComputerMove}, argPlayerMove: ${argPlayerMove}`);
             if(argComputerMove == "kamień" && argPlayerMove == "papier") {
                 printMessage("Ty wygrywasz!");
 
