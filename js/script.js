@@ -1,4 +1,7 @@
-{
+{   let counterPlayerWin = 0;
+    let counterComputerWin = 0;
+
+
     function playGame(playerInput) {
         console.log(`Funkcja playGame z argumentem playerInput: ${playerInput}`);
 
@@ -39,6 +42,7 @@
                 (argComputerMove == "papier" && argPlayerMove == "kamień")
             ) {
             printMessage("<span class='win'>Wygrywasz!</span>");
+            counterPlayerWin = counterPlayerWin + 1;
 
             } else if(argComputerMove == argPlayerMove) {
                 printMessage("Remis!");
@@ -48,6 +52,7 @@
 
             } else {
                 printMessage("<span class='lost'>Przegrywasz</span>");
+                counterComputerWin = counterComputerWin + 1;
             }
         }
 
@@ -55,6 +60,7 @@
 
         displayResult(computerMove, playerMove);
 
+        printMessage(`<span class="player_score">Twój wynik: ${counterPlayerWin}</span> | <span class="comp_score">Wynik komputera: ${counterComputerWin}</span>`);
     }
     
 
