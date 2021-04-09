@@ -45,7 +45,7 @@
             counterPlayerWin = counterPlayerWin + 1;
 
             } else if(argComputerMove == argPlayerMove) {
-                printMessage("Remis!");
+                printMessage("<span class='draw'>Remis!</span>");
 
             } else if(argPlayerMove == "nieznany ruch") {
                 printMessage("Wpisano niepoprawną wartość");
