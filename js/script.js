@@ -1,4 +1,5 @@
-{   let counterPlayerWin = 0;
+{   
+    let counterPlayerWin = 0;
     let counterComputerWin = 0;
 
 
@@ -64,13 +65,17 @@
     }
     
 
-    document.getElementById('play-rock').addEventListener('click', function() {
+    const buttonRock = document.getElementById('play-rock');
+    const buttonPaper = document.getElementById('play-paper');
+    const buttonScissors = document.getElementById('play-scissors');
+
+    buttonRock.addEventListener('click', function() {
         playGame(1);
     });
-    document.getElementById('play-paper').addEventListener('click', function() {
+    buttonPaper.addEventListener('click', function() {
         playGame(2);
     });
-    document.getElementById('play-scissors').addEventListener('click', function() {
+    buttonScissors.addEventListener('click', function() {
         playGame(3);
     });
 }
