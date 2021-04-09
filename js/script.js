@@ -9,11 +9,11 @@
         clearMessages();
 
         const getMoveName = function(argMoveId) {
-            if(argMoveId == 1) {
+            if(argMoveId === 1) {
                 return "kamień";
-            } else if(argMoveId == 2) {
+            } else if(argMoveId === 2) {
                 return "papier";
-            } else if(argMoveId == 3) {
+            } else if(argMoveId === 3) {
                 return "nożyce";
             } else {
                 printMessage("Nie znam ruchu o id: " + argMoveId);
@@ -38,14 +38,14 @@
         const displayResult = function(argComputerMove, argPlayerMove) {
             console.log(`Funkcja displayResult: argComputerMove: ${argComputerMove}, argPlayerMove: ${argPlayerMove}`);
             if(
-                (argComputerMove == "kamień" && argPlayerMove == "papier") ||
-                (argComputerMove == "papier" && argPlayerMove == "nożyce") ||
-                (argComputerMove == "papier" && argPlayerMove == "kamień")
+                (argComputerMove === "kamień" && argPlayerMove === "papier") ||
+                (argComputerMove === "papier" && argPlayerMove === "nożyce") ||
+                (argComputerMove === "papier" && argPlayerMove === "kamień")
             ) {
             printMessage("<span class='win'>Wygrywasz!</span>");
             counterPlayerWin = counterPlayerWin + 1;
 
-            } else if(argComputerMove == argPlayerMove) {
+            } else if(argComputerMove === argPlayerMove) {
                 printMessage("<span class='draw'>Remis!</span>");
 
             } else if(argPlayerMove == "nieznany ruch") {
