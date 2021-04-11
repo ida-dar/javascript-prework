@@ -60,7 +60,7 @@ body {
     justify-content: space-evenly;
     align-items: center;
     text-align: center;
-    #buttons {
+    .buttons {
         margin: 24px 0;
         button {
             margin: 0 10px;
@@ -73,7 +73,7 @@ body {
             cursor: pointer;
         }
     }
-    #messages {
+    .messages {
         margin: 5px 0;
         font-size: 24px;
     }
