@@ -16,7 +16,7 @@
             } else if(argMoveId === 3) {
                 return "nożyce";
             } else {
-                printMessage("Nie znam ruchu o id: " + argMoveId);
+                printMessage(`Nie znam ruchu o id: ${argMoveId}`);
                 return "nieznany ruch";
             }
         }
@@ -24,13 +24,13 @@
 
         const randomNumber = Math.floor(Math.random() * 3 + 1);
 
-        console.log("Wylosowana liczba to: " + randomNumber);
+        console.log(`Wylosowana liczba to: ${randomNumber}`);
 
 
         const computerMove = getMoveName(randomNumber);
 
 
-        console.log("Gracz wpisał: " + playerInput);
+        console.log(`Gracz wpisał: ${playerInput}`);
 
         const playerMove = getMoveName(playerInput);
 
@@ -42,8 +42,8 @@
                 (argComputerMove === "papier" && argPlayerMove === "nożyce") ||
                 (argComputerMove === "papier" && argPlayerMove === "kamień")
             ) {
-            printMessage("<span class='win'>Wygrywasz!</span>");
-            counterPlayerWin = counterPlayerWin + 1;
+                printMessage("<span class='win'>Wygrywasz!</span>");
+                counterPlayerWin = counterPlayerWin + 1;
 
             } else if(argComputerMove === argPlayerMove) {
                 printMessage("<span class='draw'>Remis!</span>");
@@ -57,7 +57,7 @@
             }
         }
 
-        printMessage("Mój ruch: " + computerMove + "<br>" + "Twój ruch: " + playerMove + "<br>");
+        printMessage(`Mój ruch: ${computerMove} <br> Twój ruch: ${playerMove} <br>`);
 
         displayResult(computerMove, playerMove);
 
