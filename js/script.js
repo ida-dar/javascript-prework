@@ -3,7 +3,7 @@
     let counterComputerWin = 0;
 
 
-    function playGame(playerInput) {
+    const playGame = function(playerInput) {
         console.log(`Funkcja playGame z argumentem playerInput: ${playerInput}`);
 
         clearMessages();
